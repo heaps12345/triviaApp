@@ -1,33 +1,108 @@
-.App {
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 5%;
+  min-height: 640px;
+}
+
+.main-container {
+  height: 600px;
+  width: 100%;
+  max-width: 800px;
+  margin-right: 48px;
+  background-image: linear-gradient(45deg, #20263b, #353f60);
+  border-radius: 6px;
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.App-link {
-  color: #61dafb;
+.side-container {
+  height: 600px;
+  width: 400px;
+  min-width: 320px;
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 6px;
+  background-image: linear-gradient(45deg, #20263b, #353f60);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.start-content {
+  width: 100%;
+}
+
+.start-content h1 {
+  font-weight: black;
+  font-size: 64px;
+  transition: all 0.3s;
+}
+
+.start-content h2 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-top: 16px;
+  margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .start-content h1 {
+    font-size: 40px;
   }
-  to {
-    transform: rotate(360deg);
+  .start-content h2 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .start-content input:hover {
+    background-color: #1fa59d;
+    border-color: #00e7d0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body,
+  html,
+  .main-container,
+  .grid-container {
+    overflow: hidden !important;
+  }
+
+  .grid-container {
+    padding: 0;
+    min-height: 0;
+  }
+
+  .main-container {
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+    margin: 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .start-content h1 {
+    font-size: 44px;
+  }
+
+  .side-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .start-content h1 {
+    font-size: 32px;
   }
 }

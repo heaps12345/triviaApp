@@ -1,0 +1,14 @@
+.countdown-content {
+  width: 100%;
+}
+
+.countdown-content h1 {
+  font-weight: black;
+  font-size: 64px;
+  margin-top: 24px;
+}
+
+.countdown-content h2 {
+  font-size: 24px;
+  font-weight: 300;
+}

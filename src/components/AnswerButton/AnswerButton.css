@@ -1,0 +1,41 @@
+.btn-answer {
+  width: 100%;
+  color: #fff;
+  min-height: 56px;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 24px;
+  margin: 16px auto;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+  border: 1px solid #585757;
+  border-radius: 25px;
+  background: transparent;
+}
+
+.correctAnswer {
+  background-color: #1fa59d;
+  border-color: #1fa59d;
+  color: white;
+}
+
+.incorrectAnswer {
+  background-color: #a93e69;
+  border-color: #a93e69;
+  color: white;
+}
+
+@media only screen and (min-width: 800px) {
+  .btn-answer:hover {
+    border-color: #1fa59d;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .btn-answer {
+    min-height: 48px;
+    font-size: 13px;
+    margin: 12px auto;
+    padding-left: 12px;
+  }
+}
