@@ -11,6 +11,7 @@
   border: 1px solid #585757;
   border-radius: 25px;
   background: transparent;
+  cursor: pointer;
 }
 
 .correctAnswer {
