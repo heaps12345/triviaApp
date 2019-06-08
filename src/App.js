@@ -37,7 +37,7 @@ class App extends Component {
     fetch('https://trivia-app-123.herokuapp.com/leaderboard')
       .then(res => res.json())
       .then(leaders => this.setState({ leaders }))
-      .catch(err => console.log('unable to connect to server'));
+      .catch(err => console.log('Unable to connect to server'));
   }
 
   handleGameStatusChange = value => {
