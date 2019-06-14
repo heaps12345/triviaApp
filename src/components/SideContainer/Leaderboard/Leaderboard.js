@@ -10,7 +10,7 @@ const Leaderboard = ({ leaders }) => {
       {leaders.length > 7 ? (
         <div className="leaderboardTable">
           <LeaderboardList leaders={leaders} />
-        </div>
+        </div> 
       ) : (
         <div className="loadingContainer">
           <Loader type="Oval" color="#31D5FF" height="50" width="50" />
