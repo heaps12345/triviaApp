@@ -81,7 +81,7 @@ export default class Summary extends Component {
           </div>
         ) : (
           <div className="leaderboard-confirm">
-            <h1>You made it on the leaderboard!</h1>
+            <h1>You made it on the leaderboard!!!</h1>
             <h2>Enter your leaderboard name:</h2>
             <input
               type="text"
